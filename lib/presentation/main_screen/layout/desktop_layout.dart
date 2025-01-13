@@ -11,18 +11,7 @@ class DesktopLayout extends StatelessWidget {
     return Scaffold(
       backgroundColor:
           context.theme.isDark ? context.theme.kWhite : context.theme.kBlack,
-      appBar: AppBar(
-        title: const Row(
-          children: [
-            // Image.asset(
-            //   ImagePath.shareInfoLogo1,
-            //   height: 55,
-            // ),
-            Gap(50),
-            //const CustomSearchBar(),
-          ],
-        ),
-      ),
+      
       body: Row(
         children: [
           // Drawer

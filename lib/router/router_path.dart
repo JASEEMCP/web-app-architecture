@@ -1,14 +1,9 @@
-
-
 import 'package:app/main.dart';
 
 class ScreenPath {
-
   static const splash = '/';
 
-
-
-
+  static const explore = '/explore';
 
   ///Appending path
   static _appendIdIntoCurrentPath(String path) {
