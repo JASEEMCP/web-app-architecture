@@ -3,6 +3,8 @@ import 'package:app/main.dart';
 class ScreenPath {
   static const splash = '/';
 
+  static const login = '/login';
+
   static const explore = '/explore';
 
   ///Appending path
