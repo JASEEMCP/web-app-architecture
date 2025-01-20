@@ -1,5 +1,6 @@
 
 
+import 'package:app/presentation/auth/login_screen.dart';
 import 'package:app/presentation/main_screen/auth_main.dart';
 import 'package:app/resource/utils/common_lib.dart';
 import 'package:app/router/transitions.dart';
@@ -22,7 +23,7 @@ class AuthShell {
           parentNavigatorKey: _authNavigatorKey,
           path: ScreenPath.login,
           pageBuilder: (context, state) {
-            return CustomTransitionPage(
+            return const CustomTransitionPage(
               transitionsBuilder: useNavChangeTransition,
               child: ScreenLogin(),
             );

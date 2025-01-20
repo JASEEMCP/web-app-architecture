@@ -35,7 +35,7 @@ class CustomDrawer extends StatelessWidget {
                     child: ListView(
                       children: [
                         !ResponsiveLayout.isDesktop(context)
-                            ? Row(
+                            ? const Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   // Image.asset(

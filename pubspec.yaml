@@ -6,9 +6,10 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.1 <4.0.0'
+  sdk: '>=3.6.1 <4.0.0'
 
 dependencies:
+  cookie_jar: ^4.0.8
   cupertino_icons: ^1.0.6
   dartz: ^0.10.1
   dio: ^5.7.0

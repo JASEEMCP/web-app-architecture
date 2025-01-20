@@ -8,7 +8,7 @@ class TokenState with _$TokenState {
 
 extension TokenStateX on TokenState {
   // String? get accessToken =>
-  //     maybeWhen(authorized: () => token.accessToken, orElse: () => null);
+  //     maybeWhen(authorized: (token) => token.accessToken, orElse: () => null);
   // String? get refreshToken =>
   //     maybeWhen(authorized: () => token.refreshToken, orElse: () => null);
 
@@ -20,9 +20,11 @@ extension TokenStateX on TokenState {
 
   ///Assign value to header
   Map<String, String> toAuthorizationHeader() => maybeWhen(
-        authorized: (t) => {
-          'Content-Type': 'application/json',
-          "Authorization": "Bearer ${t?.accessToken}",
+        authorized: (t) {
+          return {
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer ${t?.accessToken}",
+          };
         },
         orElse: () => {
           'Content-Type': 'application/json',
