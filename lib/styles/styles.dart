@@ -13,13 +13,13 @@ class AppStyle {
       return;
     }
     final shortestSide = screenSize.shortestSide;
-    const mobile = 600;
-    const tablet = 1100;
+    const mobile = 480;
+    const tablet = 770;
 
-    if (shortestSide > tablet) {
+    if (shortestSide >= tablet) {
       scale = 1.5;
-    } else if (shortestSide < tablet && shortestSide > mobile) {
-      scale = 1;
+    } else if (shortestSide <= tablet && shortestSide > mobile) {
+      scale = 1.2;
     } else {
       scale = 1;
     }
