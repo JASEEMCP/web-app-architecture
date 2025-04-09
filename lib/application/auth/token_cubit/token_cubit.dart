@@ -1,6 +1,5 @@
 import 'package:app/domain/auth/service/auth_service.dart';
 import 'package:app/domain/auth/token.dart';
-import 'package:app/main.dart';
 import 'package:app/resource/utils/common_lib.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';

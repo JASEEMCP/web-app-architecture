@@ -113,7 +113,7 @@ class ForgotPwdRepo implements ForgotPwdService {
         return Left(AuthFailure.custom(response.data.toString()));
       }
     } on DioException catch (e) {
-      print(e.response?.data);
+      
       if (e.type == DioExceptionType.connectionError ||
           e.error is SocketException) {
         return const Left(AuthFailure.noInternet());

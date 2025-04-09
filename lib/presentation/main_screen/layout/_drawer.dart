@@ -153,7 +153,7 @@ class CustomDrawer extends StatelessWidget {
                   Gap($style.insets.sm),
                   TileWidget(
                     isSelected: true,
-                    bgColor: context.theme.kWhite.withOpacity(0.3),
+                    bgColor: context.theme.kWhite.withValues(alpha:  0.3),
                     textColor: context.theme.kBlack,
                     tileName: 'Logout',
                     icon: Icons.exit_to_app,
@@ -195,9 +195,9 @@ class TileWidget extends StatelessWidget {
       child: ListTile(
         dense: true,
         selectedTileColor:
-            bgColor ?? context.theme.kWhite.withOpacity(0.2),
-        hoverColor: context.theme.kWhite.withOpacity(0.1),
-        splashColor: context.theme.kWhite.withOpacity(0.1),
+            bgColor ?? context.theme.kWhite.withValues(alpha:  0.2),
+        hoverColor: context.theme.kWhite.withValues(alpha:  0.1),
+        splashColor: context.theme.kWhite.withValues(alpha:  0.1),
         enableFeedback: false,
         selected: isSelected ?? false,
         onTap: () {
